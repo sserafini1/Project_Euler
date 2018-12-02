@@ -7,7 +7,7 @@ Find the sum of all the multiples of 3 or 5 below 1000
 
 
 import numpy as np
-
+import time
 
 def main():
     sum = 0
@@ -17,4 +17,6 @@ def main():
     print(sum)
 
 if __name__=="__main__":
+    start_time = time.clock()
     main()
+    print(time.clock() - start_time, "seconds")
